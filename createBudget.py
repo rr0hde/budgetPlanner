@@ -22,7 +22,7 @@ class CreateBudget:
                 if category == "0":
                     return budget
                 else:
-                    amount = input("Enter your amount: ")
+                    amount = int(input("Enter your amount: "))
                     budget[year][month][category] = amount
 
                 df = pd.DataFrame(budget)
